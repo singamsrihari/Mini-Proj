@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from "react";
-
-function App() {
-  const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    fetch("http://localhost:5000/")
-      .then((res) => res.text())
-      .then((data) => setMessage(data));
-  }, []);
-
-  return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>React + Express Mini Project</h1>
-      <p>{message}</p>
-    </div>
-  );
+"dependencies": {
+  "@testing-library/dom": "^10.4.1",
+  "@testing-library/jest-dom": "^6.9.1",
+  "@testing-library/react": "14.1.2",
+  "@testing-library/user-event": "^13.5.0",
+  "react": "18.2.0",
+  "react-dom": "18.2.0",
+  "react-scripts": "5.0.1",
+  "web-vitals": "^2.1.4"
 }
-
-export default App;
